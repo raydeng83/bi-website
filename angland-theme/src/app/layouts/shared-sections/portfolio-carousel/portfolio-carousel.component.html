@@ -1,33 +1,109 @@
-<section id="portfolio-section" class="portfolio-section gap">
+<section id="service-section" class="services-wrappper gap bg-grey">
     <div class="container">
-  <div fxLayout='column' class="text-center mb-5">
+        <div fxLayout='column' class="text-center mb-5">
             <div fxFlex.gt-md="60%">
-                <h2 class="title-page">Our Recent Work</h2>
-                <p class="lead w-60"> Consectetur adipisicing elit. Velit id error rem qui. Neque aperiam saepe placeat vero reprehenderit. </p>
+                <h2 class="title-page">Our IAM Solutions</h2>
+                <p class="lead w-60"> Plan, Build, Operate and Maintenance</p>
             </div>
         </div>
-    <ngu-carousel
-    [inputs]="carouselOptions" [dataSource]="portfolios">
-      <ngu-tile *nguCarouselDef="let p; let i = index ">
-          <mat-card class="p-0">
-              <img mat-card-image [src]="p.photo">
-              <mat-card-content>
-                <h5><strong><a href="">{{p.title}}</a></strong></h5>
-                <p>
-                  {{p.text}}
-                </p>
-                <mat-divider class="mb-1"></mat-divider>   <div>
-                    <button mat-icon-button><mat-icon class="text-muted">favorite</mat-icon></button>
-                    <span fxFlex></span>
-                    <button mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
-                </div>
-              </mat-card-content>
-            </mat-card>
-
-      </ngu-tile>
-      
-      <button mat-fab NguCarouselPrev class='carousel-left'><mat-icon>keyboard_arrow_left</mat-icon></button>
-      <button mat-fab NguCarouselNext class='carousel-right'><mat-icon>keyboard_arrow_right</mat-icon></button>
-  </ngu-carousel>
+        <div fxLayout="row wrap">
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap">
+                            <i class="material-icons">
+                                settings_phone
+                            </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>Authentication & Federation</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>IAM starts with SSO (Signle Sign-On), which offers simplicity and better security for businesses. </p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap"><i class="material-icons">
+                            favorite
+                        </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>Multi-Factor Authentication (MFA)</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>MFA helps protect you by adding an additional layer of security and research shows that using 2FA greatly boosts security. </p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap"><i class="material-icons">
+                            perm_identity
+                        </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>Web Access Management (WAM)</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>Manage authorization for enterprise's increasingly diverse portfolio of applications spanning SaaS, public cloud, private cloud and on-prem software.  </p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap"><i class="material-icons">
+                            search
+                        </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>API Security</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>API as resource will be a norm in the world of the Internet. Enterprise IAM not only strengthens its security but brings additional capabilities to enhance digital transformation journey.</p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap"><i class="material-icons">
+                            thumb_up
+                        </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>Identity Management</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>Digital identity platforms are the new imperative for both CUstomer IAM (CIAM) and Workforce Management.</p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+                <mat-card>
+                    <div class="service-card">
+                        <div class="text-center icon-cap"><i class="material-icons">
+                            visibility_off
+                        </i>
+                        </div>
+                        <div class="service-title mb-2">
+                            <h4>Directory Services</h4>
+                        </div>
+                        <div class="content-cap">
+                            <p>Directory Services stay at the core of IAM. A well-implemented DS solution boost IAM solution at the ground level.</p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
     </div>
-  </section>
+</section>

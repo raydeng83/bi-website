@@ -10,10 +10,9 @@ export class TestimonialsComponent implements OnInit {
   public carouselOptions: any;
   public testimonials = [{
     photo: 'assets/images/user-thumb-1.jpg',
-    text: `“Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora.. ”`,
+    text: `"With a decade of experiences on various IAM solution designs and implementations at industry level, we have acquired trust from our clients. We are destined to deliver our best knowledge and skills to the valued customers, not only from the perspective as a service provider, but also a fulfillment providing values to the entire industry in this era of  information technology explosion."`,
     title: 'Jhone Doe',
-    subtitle: 'Product Manager'
+    subtitle: 'Boston Identity Team'
   }]
   constructor() { }
 

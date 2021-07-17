@@ -2,8 +2,8 @@
     <div class="container">
         <div fxLayout='column' class="text-center mb-5">
             <div fxFlex.gt-md="60%">
-                <h2 class="title-page">Write Us A Line</h2>
-                <p class="lead w-60"> Consectetur adipisicing elit. Velit id error rem qui. Neque aperiam saepe placeat vero reprehenderit. </p>
+                <h2 class="title-page">Contact Us</h2>
+                <p class="lead w-60"> To learn more about the Boston Identity difference for your IAM needs, please complete the form below. Thanks for your interest in choosing Boston Identity. </p>
             </div>
         </div>
         <form [formGroup]="contactForm">
@@ -17,16 +17,15 @@
                     </div>
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Email">
+                            <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Work Email">
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">*Invalid Address</small>
                     </div>
-
                 </div>
                 <div fxFlex="100">
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <input matInput name="subject" [formControl]="contactForm.controls['subject']" placeholder="Subject">
+                            <input matInput name="company" [formControl]="contactForm.controls['company']" placeholder="Your Company">
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">*Required</small>
                     </div>
