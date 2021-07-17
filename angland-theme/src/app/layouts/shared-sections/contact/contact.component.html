@@ -23,12 +23,12 @@
                     </div>
                 </div>
                 <div fxFlex="100">
-                    <div class="pb-1">
-                        <mat-form-field class="full-width">
-                            <input matInput name="company" [formControl]="contactForm.controls['company']" placeholder="Your Company">
-                        </mat-form-field>
-                        <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">*Required</small>
-                    </div>
+<!--                    <div class="pb-1">-->
+<!--                        <mat-form-field class="full-width">-->
+<!--                            <input matInput name="company" [formControl]="contactForm.controls['company']" placeholder="Your Company">-->
+<!--                        </mat-form-field>-->
+<!--                        <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">*Required</small>-->
+<!--                    </div>-->
                     <div class="pb-1">
                         <mat-form-field class="full-width">
                             <textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>
