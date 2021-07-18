@@ -1,22 +1,14 @@
 import { Routes } from '@angular/router';
+import {LayoutTwoComponent} from "./layouts/layout-two/layout-two.component";
 
 export const rootRouterConfig: Routes = [
   { 
-    path: '', 
-    redirectTo: 'demos', 
-    pathMatch: 'full' 
+    path: '',
+    component: LayoutTwoComponent
   },
-  { 
-    path: 'demos', 
-    loadChildren: './main/main.module#DemoModule'
-  },
-  { 
-    path: 'layout', 
-    loadChildren: './layouts/layout.module#LayoutModule'
-  },
-  { 
-    path: '**', 
-    redirectTo: 'layout/one'
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
 
