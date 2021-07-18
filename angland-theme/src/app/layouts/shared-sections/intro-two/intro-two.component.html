@@ -1,6 +1,6 @@
 <section id="intro-one-section" class="home-intro-section text-center primary-bg">
     <div id="videoDiv">
-        <video autoplay muted loop>
+        <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="../../../../assets/videos/bg.mp4" type="video/mp4">
         </video>
     </div>
