@@ -86,17 +86,17 @@
 	margin: 2rem 0;
 }
 
-#overlay img { display: none; }
+//#overlay img { display: none; }
+//
+//#overlay.image-container img {
+//  display: block;
+//  width: 100%;
+//  heigt: 100%;
+//  margin-top: -60px;
+//}
 
-#overlay.image-container img {
-  display: block;
-  width: 100%;
-  heigt: 100%;
-  margin-top: -60px;
-}
-
-//#videoDiv {width: 100%;  position: relative; }
-//#video1 { margin: auto; display: block;}
+#videoDiv {width: 100%;  position: relative; margin-top: -40px;}
+#video1 { margin: auto; display: block;}
 #videoMessage { position: absolute; top: 0; left: 0;
   display: flex;
   flex-direction: column;
