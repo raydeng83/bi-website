@@ -37,19 +37,25 @@
   margin:2rem auto 3rem  auto;
 }
 
-#videoDiv {width: 100%;  position: relative; margin-top: -40px;}
+#videoDiv {
+  width: 100%;  position: relative; margin-top: -40px;
+}
 #video1 { margin: auto; display: block; width: 100%;}
-#videoMessage { position: absolute; top: 0; left: 0;
+#videoMessage {
+  position: absolute;
+  top: calc(17vw - 300px);
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
 
 @media (max-width: 767px) {
   .home-intro-section {
-    padding: 100px 0 0;
+    padding: 170px 0 0;
   }
   .home-intro-title {
     margin: 0 0 24px;
