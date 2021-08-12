@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {egretAnimations} from "../../../../shared/animations/egret-animations";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
+  animations: egretAnimations,
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {

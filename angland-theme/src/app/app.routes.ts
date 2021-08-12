@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {LayoutTwoComponent} from "./layouts/layout-two/layout-two.component";
+import {ServicesComponent} from "./layouts/shared-sections/services/services.component";
 import {ProductsComponent} from "./layouts/shared-sections/products/products.component";
 import {AppComponent} from "./app.component";
 import {SolutionsComponent} from "./layouts/shared-sections/solutions/solutions.component";
@@ -14,7 +14,7 @@ export const rootRouterConfig: Routes = [
   },
   {
     path: 'services',
-    component: LayoutTwoComponent
+    component: ServicesComponent
   },
   {
     path: 'products',

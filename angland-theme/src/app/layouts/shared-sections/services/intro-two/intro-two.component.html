@@ -1,20 +1,22 @@
 <section id="intro-one-section" class="home-intro-section text-center primary-bg">
-    <div id="videoDiv">
-        <video id="video1" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
-            <source src="../../../../assets/videos/bg.mp4" type="video/mp4">
-        </video>
-    </div>
-    <!--            <div id="videoMessage" class="styling">-->
-    <div  fxLayout="column">
-        <!--        <img src="../../../../assets/videos/bg.gif" alt="Be patient..."/>-->
-        <div id="videoMessage" class="styling">
-            <div class="home-intro-subtitle">
-                Design, Implementation & DevOps
+    <div [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+        <div id="videoDiv">
+            <video id="video1" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
+                <source src="../../../../../assets/videos/bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--            <div id="videoMessage" class="styling">-->
+        <div fxLayout="column">
+            <!--        <img src="../../../../assets/videos/bg.gif" alt="Be patient..."/>-->
+            <div id="videoMessage" class="styling">
+                <div class="home-intro-subtitle">
+                    Design, Implementation & DevOps
+                </div>
+                <h1 class="home-intro-title">Identity & Access Management</h1>
+                <p class="home-intro-text"> We help organizations in all phases to complete your IAM journey together
+                    with
+                    our passion and customer first principle </p>
             </div>
-            <h1 class="home-intro-title">Identity & Access Management</h1>
-            <p class="home-intro-text"> We help organizations in all phases to complete your IAM journey together
-                with
-                our passion and customer first principle </p>
         </div>
     </div>
 </section>

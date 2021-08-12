@@ -36,4 +36,8 @@ export class HeaderComponent implements OnInit {
     this.window.open('');
   }
 
+  scrollToTop() {
+    window.scroll(0,0);
+  }
+
 }

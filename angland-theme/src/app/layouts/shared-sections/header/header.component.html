@@ -3,25 +3,21 @@
         <div class="header-mobile-top" fxLayout="row wrap" fxLayoutAlign="start center">
             <div class="home-logo mr-1">
                 <a href="/">
-                    <div id="header-image" class="mr-1" ></div>
+                    <div id="header-image" class="mr-1"></div>
                     <h2>Boston Identity <p style="font-size: small">An Identity Company</p>
                     </h2>
                 </a>
             </div>
-            <button mat-icon-button id="menu-toggle" (click)="toggleMenu()"><mat-icon>menu</mat-icon></button>
+            <button mat-icon-button id="menu-toggle" (click)="toggleMenu()">
+                <mat-icon>menu</mat-icon>
+            </button>
         </div>
-
         <div fxFlex fxLayoutAlign="end" class="top-menu">
-
-            <button mat-button id="dashboard-topbtn" class="hometop-btn" routerLink="services"><strong>IAM Services</strong></button>
-            <button mat-button class="hometop-btn" routerLink="products"><strong>Products</strong></button>
-            <button mat-button  class="hometop-btn" routerLink="solutions"><strong>IAM Solutions</strong></button>
-<!--            <button mat-button  class="hometop-btn" scrollTo="industry-section" (click)="toggleMenu()"><strong>Industry Solutions</strong></button>-->
-            <button mat-button  class="hometop-btn" routerLink="team"><strong>Team</strong></button>
-<!--            <button mat-button id="dashboard-topbtn" class="hometop-btn" scrollTo="pricings-section" (click)="toggleMenu()"><strong>Resources</strong></button>-->
-            <button mat-button  class="hometop-btn" routerLink="contact-us"><strong>Contact Us</strong></button>
-<!--            <button mat-button id="dashboard-topbtn" class="hometop-btn" scrollTo="intro-one-section" (click)="toggleMenu()"><strong>More Info</strong></button>-->
-
+            <button mat-button id="dashboard-topbtn" class="hometop-btn" routerLink="services" (click)="scrollToTop()"><strong>IAM Services</strong></button>
+            <button mat-button class="hometop-btn" routerLink="products" (click)="scrollToTop()"><strong>Products</strong></button>
+            <button mat-button class="hometop-btn" routerLink="solutions" (click)="scrollToTop()"><strong>IAM Solutions</strong></button>
+            <button mat-button class="hometop-btn" routerLink="team" (click)="scrollToTop()"><strong>Team</strong></button>
+            <button mat-button class="hometop-btn" routerLink="contact-us" (click)="scrollToTop()"><strong>Contact Us</strong></button>
         </div>
     </div>
 </header>

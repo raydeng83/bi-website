@@ -1,9 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
+import {egretAnimations} from "../../../../shared/animations/egret-animations";
 
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimonials.component.html',
+  animations: egretAnimations,
   styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent implements OnInit {
