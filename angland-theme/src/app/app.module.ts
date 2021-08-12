@@ -35,6 +35,10 @@ import {PortfolioCarouselComponent} from "./layouts/shared-sections/portfolio-ca
 import {TestimonialsCarouselComponent} from "./layouts/shared-sections/testimonials-carousel/testimonials-carousel.component";
 import {ServicesCarouselComponent} from "./layouts/shared-sections/services-carousel/services-carousel.component";
 import {WINDOW_PROVIDERS} from "./shared/helpers/window.helper";
+import { ProductsComponent } from './layouts/shared-sections/products/products.component';
+import { SolutionsComponent } from './layouts/shared-sections/solutions/solutions.component';
+import { TeamComponent } from './layouts/shared-sections/team/team.component';
+import { ContactUsComponent } from './layouts/shared-sections/contact-us/contact-us.component';
 
 @NgModule({
   imports: [
@@ -74,7 +78,11 @@ import {WINDOW_PROVIDERS} from "./shared/helpers/window.helper";
     TestimonialsComponent,
     PortfolioCarouselComponent,
     TestimonialsCarouselComponent,
-    ServicesCarouselComponent
+    ServicesCarouselComponent,
+    ProductsComponent,
+    SolutionsComponent,
+    TeamComponent,
+    ContactUsComponent
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]
