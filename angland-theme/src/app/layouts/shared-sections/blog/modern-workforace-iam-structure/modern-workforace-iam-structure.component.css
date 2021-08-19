@@ -1,0 +1,16 @@
+.home-intro-section {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 150px 0 0;
+    color: #ffffff;
+    overflow: visible;
+}
+
+.banner {
+    position: static;
+    transform: none;
+    display: block;
+    max-width: 100%;
+}

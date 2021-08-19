@@ -1,0 +1,162 @@
+<section  class="home-intro-section text-center primary-bg"></section>
+<section id="service-section" class="services-wrappper gap bg-grey" [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+    <div class="container">
+        <div >
+            <mat-card >
+                <mat-card-title>
+                    <div class="mb-2 text-center">
+                        <h2 class="title-page">Modern Workforce IAM Structure</h2>
+                        <img src="assets/images/blog/modern-workforce-iam-structure-banner.png">
+                    </div>
+                </mat-card-title>
+                <mat-card-content>
+                    <p dir="ltr">
+                        In today’s cyber world, IAM technology and market are shifting rapidly. A
+                        well-established IAM system will provide a much better foundation to grow
+                        its business, lowering cost and risk for the daily operations.
+                    </p>
+                    <h1 dir="ltr">
+                        Customer IAM and Workforce IAM
+                    </h1>
+                    <p dir="ltr">
+                        In general, IAM can be categorized into two parts, Customer IAM (CIAM) and
+                        Workforce IAM (or Employee IAM). Due to the nature that identity targets,
+                        the core objects of an IAM system, are different between CIAM and Workforce
+                        IAM, the way they are treated or architected are different as well. For
+                        example, in Workforce IAM, employees are registered by HR, who can help to
+                        handle registration issues from various aspects; in CIAM, end users will
+                        usually register by themselves and this flow should be straightforward and
+                        intuitive.
+                    </p>
+                    <br/>
+                    <h1 dir="ltr">
+                        Workforce IAM Requirements
+                    </h1>
+                    <p dir="ltr">
+                        There are various aspects we can talk about regarding Workforce IAM. Here
+                        are some of them.
+                    </p>
+                    <h4 dir="ltr">
+                        Empower Work Efficiency
+                    </h4>
+                    <p dir="ltr">
+                        Work efficiency is a large topic. From a certain perspective, increasing
+                        work efficiency reduces operational cost while maintaining productivity and
+                        hence increased profit. Empowering a SSO mechanism across different
+                        platforms ranging from internal in-house application to external partners
+                        service application will greatly reduce the application access friction and
+                        workforce disconnectivity. Self-service portal for employees will enhance
+                        user experience and reduce IT costs as well.
+                    </p>
+                    <h4 dir="ltr">
+                        Authorization with Flexible Policy
+                    </h4>
+                    <p dir="ltr">
+                        Enterprise is never a standalone entity, especially in this globally
+                        connected informational world. We are all seeing an increasing complexity
+                        among an enterprise application system, both internally and externally. An
+                        IAM system that provides a flexible Authentication and Authorization
+                        enforcement mechanism which handles different workflows at different
+                        granularity will no doubt enhance the user experience. For example, an
+                        employee accessing an internal application which doesn’t interact with
+                        sensitive information doesn’t need to enforce an MFA while an external
+                        partner accessing an internal application from the public internet will
+                        definitely need to have an MFA.
+                    </p>
+                    <h4 dir="ltr">
+                        Legacy App Handling
+                    </h4>
+                    <p dir="ltr">
+                        Legacy applications could be painful to handle, especially for those
+                        enterprises with some history. Due to the incompatibility and poor support
+                        with modern technology, its integration could be challenging. A good IAM
+                        platform should provide flexible ways to integrate with legacy apps.
+                    </p>
+                    <br/>
+                    <h4 dir="ltr">
+                        Continuous Monitoring
+                    </h4>
+                    <p dir="ltr">
+                        Continuous Monitoring is a continuous journey. A good IAM system should
+                        provide strong logging and monitoring mechanisms. This could be due to
+                        troubleshooting demand, regulatory compliance needs, or any other reasons.
+                    </p>
+                    <h1 dir="ltr">
+                        Components Architecture
+                    </h1>
+                    <p dir="ltr">
+                        Here is a general architecture using Ping Identity for Workforce
+                        Management.
+                    </p>
+                    <p dir="ltr" class="text-center" >
+                        <img src="assets/images/blog/modern-work-iam-structure-components.png"/>
+                    </p>
+                    <p dir="ltr">
+                        Workforce IAM Components Diagram
+                    </p>
+                    <h4 dir="ltr">
+                        Use Case Scenario
+                    </h4>
+                    <ul>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Centrified Authentication and Authorization Provider
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                SSO across internal and external platforms
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Gateway proxy protecting legacy apps
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Adaptive MFA for sensitive accesses
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Self-service for reduced IT costs
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Continuous monitoring with external Saas platform
+                            </p>
+                        </li>
+                    </ul>
+                    <br/>
+                    <p dir="ltr">
+                        PingFederate here is acting as a central authentication and authorization
+                        management platform. An enterprise AD is connected to it for user profile
+                        provisioning. SSO is fulfilled via such modern protocols as OAuth, OIDC and
+                        SAML. With Auth Provider’s built-in authorization policy management, we can
+                        implement comprehensive authorization workflows to adapt to different
+                        needs.
+                    </p>
+                    <br/>
+                    <p dir="ltr">
+                        Nevertheless, PingAccess can act as a gateway proxy as a policy enforcement
+                        point to protect legacy applications while leveraging PingFederate as
+                        policy decision point. To further enhance security, PingID cloud service is
+                        used with PingFederate to provide MFA capability. Monitoring is log
+                        forwarding from all sources to external aggregating Saas platforms such as
+                        Splunk.
+                    </p>
+                    <br/>
+                    <p dir="ltr">
+                        This architecture is leveraging Ping Identity products, but can be extended
+                        to other IAM providers as well.
+                    </p>
+                    <br>
+                    <i><p><a href="http://www.bostonidentity.com" style="color: blue;">Boston Identity</a> helps organizations in all phases to complete their IAM journey together with passion and customer first principle.</p></i>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+    </div>
+</section>

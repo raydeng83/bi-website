@@ -1,0 +1,27 @@
+<section  class="home-intro-section text-center primary-bg"></section>
+
+<section id="portfolio-section" class="portfolio home-section gap" >
+    <div class="container">
+        <div fxLayout='column' class="text-center mb-5" [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+            <div fxFlex.gt-md="60%">
+                <h2 class="title-page">Blogs</h2>
+                <p class="lead w-60"> Blog posts sharing thoughts and ideas on IAM security trends and insights </p>
+            </div>
+        </div>
+        <div fxLayout="row nowrap" fxLayout.lt-sm="column" fxLayoutGap="30px">
+            <div fxFlex="33.33">
+                <mat-card class="p-0 m-0 post" (click)="scrollToTop()" routerLink="/blog/modern-workforce-iam-structure" [@animate]="{ value: '*', params: { y: '50px', delay: '500ms' } }">
+                    <img mat-card-image src="../../../../../assets/images/blog/modern-workforce-iam-structure-card.png">
+                    <mat-card-content>
+                        <div class="title-head">
+                            <h4><strong><a href="">Modern Workforce IAM Structure</a></strong></h4>
+                        </div>
+                        <p>
+                            In today’s cyber world, IAM technology and market are shifting rapidly. A well-established IAM system will provide a much better foundation to grow its business, lowering cost and risk for the daily operations.
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

@@ -33,6 +33,10 @@ export const rootRouterConfig: Routes = [
     component: ContactUsComponent
   },
   {
+    path: 'blog',
+    loadChildren: () => import('./layouts/shared-sections/blog/blog.module').then(m => m.BlogModule),
+  },
+  {
     path: '**',
     redirectTo: '/'
   }
