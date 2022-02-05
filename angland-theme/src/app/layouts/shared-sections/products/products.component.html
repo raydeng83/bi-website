@@ -1,88 +1,100 @@
-<section  class="home-intro-section text-center primary-bg"></section>
+<section class="home-intro-section text-center primary-bg"></section>
 
-<div id="feature-section" class="featured-two gap bg-grey" [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+<div id="feature-section" class="featured-two gap bg-grey">
     <div class="container">
-        <div fxLayout='column' class="text-center mb-5">
+        <div fxLayout='column' class="text-center mb-5"
+             [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
             <div fxFlex.gt-md="60%">
-                <h2 class="title-page">We are Specialized in IAM Services</h2>
-                <p class="lead w-60">We help you capture the modern IAM roadmap, in an effective and sustainable
-                    manner.</p>
+                <h2 class="title-page">Athena Series - Identity Solutions</h2>
+                <p class="lead w-60">Our Identity Products</p>
             </div>
         </div>
-        <div fxLayout="row wrap">
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="feature-two">
-                    <span class="feature-count accent-color">01.</span>
-                    <div class="feature-content">
-                        <h3>IAM Design</h3>
-                        <p>IAM is tremendous to enterprise security and the resources protected. The challenging part is
-                            that it includes a multitude of subdisciplines - Identity Management, Access Management,
-                            Identity Governance, Privileged Access Management, Crypto Management and so forth. Each
-                            enterprise will be unique and hence asking different strategies and designs to fulfill its
-                            security goal.
-                        </p>
+        <mat-tab-group mat-align-tabs="center" [@animate]="{ value: '*', params: { y: '50px', delay: '500ms' } }">
+            <mat-tab label="Athena IAM">
+                <div fxLayout="row wrap">
+                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                         fxFlex.xl="20">
+                        <div class="feature-two">
+                            <div class="feature-content ">
+                                <h3>Based on Standard Protocols</h3>
+                                <p>Athena IAM is one-stop platform to solve your problems for OS, Network Devices and
+                                    Web Apps</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                        <div class="feature-two">
+                            <img src="assets/images/athena-iam1.png"><br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="feature-two">
-                    <span class="feature-count accent-color">02</span>
-                    <div class="feature-content">
-                        <h3>IAM Implementation</h3>
-                        <p>An IAM implementation should not be a simple project with a limited timeframe; instead, it
-                            requires a formal long-term program in several phases and proper governance, which are
-                            aligned to business goals. Research has shown that organizations without a well-planned
-                            program spend generally 40% more on an IAM implementation than those that do have it.
-                        </p>
+                <div fxLayout="row wrap">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                        <div class="feature-two">
+                            <img src="assets/images/athena-iam2.png"><br>
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                         fxFlex.xl="20">
+                        <div class="feature-two">
+                            <div class="feature-content ">
+                                <h3>Identity Lifecycle</h3>
+                                <p>Life Cycle management in-a-box</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="feature-two">
-                    <span class="feature-count accent-color">03.</span>
-                    <div class="feature-content">
-                        <h3>IAM Support</h3>
-                        <p>A lot of enterprise decision makers can come to the erroneous conclusion that long-term
-                            support for IAM system is unnecessary. Although modern IAM solutions are becoming more
-                            autonomous, active involvement in IAM maintenance is still needed, especially on the aspect
-                            of utilizing the data generated by the solution tools. Staying updated is also important to
-                            the entire IAM solution due to the fact that information technologies are evolving rapidly
-                            nowadays.
-                        </p>
+                <div fxLayout="row wrap">
+                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                         fxFlex.xl="20">
+                        <div class="feature-two">
+                            <div class="feature-content ">
+                                <h3>MFA Available</h3>
+                                <p>Various MFA approaches</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                        <div class="feature-two">
+                            <img src="assets/images/athena-iam3.png"><br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="feature-two">
-                    <span class="feature-count accent-color">04.</span>
-                    <div class="feature-content">
-                        <h3>IAM Migration</h3>
-                        <p>We are in a time where a new generation of IAM solutions starting to replace old legacy IAM
-                            systems. Yet, this migration job is often tougher than expected, which is largely due to the
-                            co-existence requirement of both the new and legacy IAM systems. The bulk and
-                            complexity as well as of the gap between modern and legacy IAM solutions make the migration
-                            a relatively long-term process. With an experienced partner, the review and update is much
-                            less risky and more promising.
-                        </p>
+            </mat-tab>
+            <mat-tab label="Athena PKI">
+                <div fxLayout="row wrap">
+                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                         fxFlex.xl="20">
+                        <div class="feature-two">
+                            <div class="feature-content ">
+                                <h3>PKI Factory</h3>
+                                <p>Manage your PKI certificates in one central platform</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                        <div class="feature-two">
+                            <img src="assets/images/athena-pki1.png"><br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="feature-two">
-                    <span class="feature-count accent-color">05.</span>
-                    <div class="feature-content">
-                        <h3>Software Selection</h3>
-                        <p>Not all softwares are built equally and each has its own PROs and CONs. A well-selected list
-                            of software tools not merely save a large chunk from the organization's budget, but
-                            facilitate the progress and completeness of the delivery as well. This requires a thorough
-                            understanding of your current system state and the technologies available in the market. We
-                            are proud to announce that Boston Identity will provide this evaluation for free to our
-                            valued customers.
-                        </p>
+                <div fxLayout="row wrap">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                        <div class="feature-two">
+                            <img src="assets/images/athena-pki2.jpg"><br>
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                         fxFlex.xl="20">
+                        <div class="feature-two">
+                            <div class="feature-content ">
+                                <h3>Core Security</h3>
+                                <p>PKI security is the core feature</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
+            </mat-tab>
+        </mat-tab-group>
     </div>
 </div>
