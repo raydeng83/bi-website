@@ -1,34 +1,85 @@
 <section class="home-intro-section text-center primary-bg"></section>
 
-<div id="feature-section" class="featured-two gap bg-grey">
-    <div class="container">
-        <div fxLayout='column' class="text-center mb-5"
-             [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
-            <div fxFlex.gt-md="60%">
-                <h2 class="title-page">Athena Series - Identity Solutions</h2>
-                <p class="lead w-60">Our Identity Products</p>
-            </div>
+<div id="feature-section" class="featured-two gap ">
+    <div fxLayout='column' class="text-center mb-5 "
+         [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+        <div fxFlex.gt-md="60%">
+            <img src="assets/images/athena-logo.png" style="width: 300px;">
+            <h2 class="title-page">Athena Identity Solutions</h2>
+            <p class="lead w-60">Our Identity Products</p>
         </div>
-        <mat-tab-group mat-align-tabs="center" [@animate]="{ value: '*', params: { y: '50px', delay: '500ms' } }">
-            <mat-tab label="Athena IAM">
-                <div fxLayout="row wrap">
-                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
-                         fxFlex.xl="20">
-                        <div class="feature-two">
-                            <div class="feature-content ">
-                                <h3>Based on Standard Protocols</h3>
-                                <p>Athena IAM is one-stop platform to solve your problems for OS, Network Devices and
-                                    Web Apps</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
-                        <div class="feature-two">
-                            <img src="assets/images/athena-iam1.png"><br>
+    </div>
+    <mat-tab-group mat-align-tabs="center" [@animate]="{ value: '*', params: { y: '50px', delay: '500ms' } }">
+        <mat-tab label="Athena IAM">
+            <div fxLayout='column' class="text-center mb-5 bg-white">
+                <div fxFlex.gt-md="60%" >
+                    <h1 class="title-page">Athena IAM</h1>
+                    <h5 class="lead w-60">Empower PKI-based server and desktop access control across all environments, built using OS native protocols, meet compliance requirement </h5>
+                </div>
+            </div>
+            <div fxLayout="row wrap" class="container">
+
+                <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="40" fxFlex.lg="40"
+                     fxFlex.xl="40">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <br>
+                            <h3>Securing Server and Workstation Access with Industry Best Practices</h3>
+                            <p>Athena IAM delivers industry-proven solutions for securing your server and workstation
+                                accesses</p>
                         </div>
                     </div>
                 </div>
-                <div fxLayout="row wrap">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="60" fxFlex.lg="60" fxFlex.xl="60">
+                    <div class="feature-two">
+                        <img src="assets/images/athena-iam1.png"><br>
+                    </div>
+                </div>
+            </div>
+            <div fxLayout="row wrap" class="container">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33"
+                     fxFlex.xl="33">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h4>PKI-based Access Control</h4>
+                            <p>PKI enables certificate-based authentication both securely and efficiently</p>
+                        </div>
+                    </div>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33"
+                     fxFlex.xl="33">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h4>MFA</h4>
+                            <p>Multi-Factor Authentication increases organization security with better controlled accesses</p>
+                        </div>
+                    </div>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33"
+                     fxFlex.xl="33">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h4>OS Native</h4>
+                            <p>OS Native enables strong security, extensibility and compatability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div fxLayout="row wrap" class="container">
+                <div fxFlex.xs="100" fxFlex.sm="100" >
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <img src="assets/images/windows-logo.png" style="width: 150px;">&nbsp;&nbsp;
+                            <img src="assets/images/linux-logo.png" style="width: 100px; margin-left: 20px;">
+                            <img src="assets/images/active-directory-logo.png" style="width: 150px; margin-left: 30px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-grey">
+                <div fxLayout="row wrap" class="container ">
                     <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
                         <div class="feature-two">
                             <img src="assets/images/athena-iam2.png"><br>
@@ -44,57 +95,60 @@
                         </div>
                     </div>
                 </div>
-                <div fxLayout="row wrap">
-                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
-                         fxFlex.xl="20">
-                        <div class="feature-two">
-                            <div class="feature-content ">
-                                <h3>MFA Available</h3>
-                                <p>Various MFA approaches</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
-                        <div class="feature-two">
-                            <img src="assets/images/athena-iam3.png"><br>
+            </div>
+
+            <div fxLayout="row wrap">
+                <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                     fxFlex.xl="20">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h3>MFA Available</h3>
+                            <p>Various MFA approaches</p>
                         </div>
                     </div>
                 </div>
-            </mat-tab>
-            <mat-tab label="Athena PKI">
-                <div fxLayout="row wrap">
-                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
-                         fxFlex.xl="20">
-                        <div class="feature-two">
-                            <div class="feature-content ">
-                                <h3>PKI Factory</h3>
-                                <p>Manage your PKI certificates in one central platform</p>
-                            </div>
-                        </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                    <div class="feature-two">
+                        <img src="assets/images/athena-iam3.png"><br>
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
-                        <div class="feature-two">
-                            <img src="../../../../assets/images/athena-pki2.png"><br>
+                </div>
+            </div>
+        </mat-tab>
+
+
+        <mat-tab label="Athena PKI">
+            <div fxLayout="row wrap">
+                <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                     fxFlex.xl="20">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h3>PKI Factory</h3>
+                            <p>Manage your PKI certificates in one central platform</p>
                         </div>
                     </div>
                 </div>
-                <div fxLayout="row wrap">
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
-                        <div class="feature-two">
-                            <img src="assets/images/athena-pki1.png"><br>
-                        </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                    <div class="feature-two">
+                        <img src="../../../../assets/images/athena-pki2.png"><br>
                     </div>
-                    <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
-                         fxFlex.xl="20">
-                        <div class="feature-two">
-                            <div class="feature-content ">
-                                <h3>Core Security</h3>
-                                <p>PKI security is the core feature</p>
-                            </div>
+                </div>
+            </div>
+            <div fxLayout="row wrap">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="80">
+                    <div class="feature-two">
+                        <img src="assets/images/athena-pki1.png"><br>
+                    </div>
+                </div>
+                <div style="margin-top: 50px;" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30"
+                     fxFlex.xl="20">
+                    <div class="feature-two">
+                        <div class="feature-content ">
+                            <h3>Core Security</h3>
+                            <p>PKI security is the core feature</p>
                         </div>
                     </div>
                 </div>
-            </mat-tab>
-        </mat-tab-group>
-    </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>

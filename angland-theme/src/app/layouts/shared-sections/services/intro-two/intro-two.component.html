@@ -1,5 +1,5 @@
 <section id="intro-one-section" class="home-intro-section text-center primary-bg">
-    <div [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
+    <div >
         <div id="videoDiv">
             <video id="video1" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
                 <source src="../../../../../assets/videos/bg.mp4" type="video/mp4">
@@ -19,7 +19,7 @@
     </div>
 </section>
 
-<div id="feature-section" class="featured-two gap bg-grey">
+<div id="feature-section" class="featured-two gap " [@animate]="{ value: '*', params: { y: '50px', delay: '300ms' } }">
     <div class="container">
         <div fxLayout='column' class="text-center mb-5">
             <div fxFlex.gt-md="60%">
